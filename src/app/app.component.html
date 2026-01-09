@@ -1,4 +1,5 @@
 <mat-card class="signup-card">
+
   <mat-card-title>Sign UpForm</mat-card-title>
 
   <form #signUpForm="ngForm" (ngSubmit)="onSubmit()">
@@ -90,9 +91,12 @@
 
 
     <mat-card-actions align="end">
-      <button mat-raised-button color="primary" class="btn-block" type="submit">
+      <button mat-raised-button color="primary" class="btn-block" type="submit" [disabled]="signUpForm.invalid">
         Sign Up
       </button>
+      <p class="success-msg" *ngIf="isSignupSuccess">
+        Signup Successful!
+      </p>
       <button mat-raised-button color="accent" class="btn-block" (click)="patchData()" [disabled]="true">
         Edit
       </button>

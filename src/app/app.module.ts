@@ -11,6 +11,7 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatCheckboxModule,
     MatCardModule,
     MatRadioModule,
+    MatSnackBarModule,
     BrowserAnimationsModule,
   ],
   providers: [],
